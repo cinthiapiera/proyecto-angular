@@ -1,0 +1,14 @@
+.list{
+  width: 80%;
+  margin: auto;
+  margin-top:  2em;
+}
+
+.cards{
+  display: grid;
+  /* manera simple de crear un layout responsi */
+  grid-template-columns: repeat(auto-fill, minmax(12em, 1fr));
+  /* separacion de columnas */
+  gap: 0.5em;
+  margin-top: 2em;
+}

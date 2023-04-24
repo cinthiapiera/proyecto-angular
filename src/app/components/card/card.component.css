@@ -1,0 +1,6 @@
+.yugioh-card img{
+  width: 100%;
+  /* para que la img se adapte */
+  object-fit: cover;
+  width: 200px;
+}
