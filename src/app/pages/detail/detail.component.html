@@ -8,18 +8,18 @@
     <div class="item">
       <p class="description">{{card.desc}}</p>
     </div>
-
+    <hr>
     <div class="item">
-      <h3 class="title">Tipo</h3>
+      <h4 class="title">Type</h4>
       <p class="description">{{card.type}}</p>
     </div>
 
     <div class="item">
-      <h3 class="title">Subtipo</h3>
+      <h4 class="title">Subtype</h4>
       <p class="description">{{card.race}}</p>
     </div>
 
-    <table class="table">
+    <table class="table table-bordered">
       <thead>
         <tr>
           <th scope="col">Market</th>
@@ -29,7 +29,7 @@
       <tbody>
         <!-- keyvalue, lo vuelve iterable al objeto -->
         <tr *ngFor="let market of card.card_prices[0] | keyvalue">
-          <th scope="row">{{market.key | marketName}}</th>
+          <td scope="row">{{market.key | marketName}}</td>
           <td>{{market.value}}</td>
         </tr>
       </tbody>
